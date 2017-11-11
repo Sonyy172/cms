@@ -15,10 +15,12 @@
 session_start();
 require_once __DIR__ . '/src/Facebook/autoload.php';
 $fb = new Facebook\Facebook([
-  'app_id' => '385750371842199',
-  'app_secret' => '4907802fbf3e614c611542fced8ad7dc',
-  'default_graph_version' => 'v2.10',
-  ]);
+	'app_id' => '385750371842199',
+  	'app_secret' => '4907802fbf3e614c611542fced8ad7dc',
+  	'default_graph_version' => 'v2.10',
+  	]);
+
+
 $helper = $fb->getRedirectLoginHelper();
 $permissions = ['email']; // optional
 	
