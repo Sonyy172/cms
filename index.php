@@ -79,7 +79,7 @@ if (isset($accessToken)) {
   	// Now you can redirect to another page and use the access token from $_SESSION['facebook_access_token']
 } else {
 	// replace your website URL same as added in the developers.facebook.com/apps e.g. if you used http instead of https and you used non-www version or www version of your website then you must add the same here
-	$loginUrl = $helper->getLoginUrl('https://www.facebook.com/v2.4/dialog/oauth?client_id=385750371842199&state=a25ca05e5c6d4544002565cd7cc350ee&response_type=code&sdk=php-sdk-5.6.1&redirect_uri=https%3A%2F%2F210.211.109.211%3Ahome%2Fhoangphuc%2Fcms%2Findex.php&scope=email', $permissions);
+	$loginUrl = $helper->getLoginUrl('http://210.211.109.211:home/hoangphuc/cms/index.php', $permissions);
 	echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 } 
 
