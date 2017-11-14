@@ -22,6 +22,6 @@ try {
 }
  
 $helper = $fb->getRedirectLoginHelper();
-$permissions = ['email', 'user_likes'];
+$permissions = ['email', 'manage_pages'];
 $loginUrl = $helper->getLoginUrl('http://cb.saostar.vn/login-callback.php', $permissions);
 echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
