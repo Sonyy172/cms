@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/phpsdk5/autoload.php';
+require_once __DIR__ . '/phpsdk5/Facebook/autoload.php';
  
 session_start();
  
