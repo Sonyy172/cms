@@ -1,4 +1,5 @@
 <?php
+phpinfo();
 require_once __DIR__ . '/phpsdk5/Facebook/autoload.php';
  
 session_start();
